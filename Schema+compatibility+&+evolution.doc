@@ -1,0 +1,715 @@
+Date: Sun, 13 Feb 2022 23:09:23 -0800 (PST)
+Message-ID: <2136944807.156686.1644822563513@prod-2.prod.entcnf-prod.svc.cluster.local>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_156685_668114868.1644822563512"
+
+------=_Part_156685_668114868.1644822563512
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Schema compatibility &amp; evolution</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Schema compatibility &amp; evolution</h1>
+    <div class=3D"Section1">
+        <h1 id=3D"Schemacompatibility&amp;evolution-Schemaregistry(defaultc=
+ompatibility(backward))"><span class=3D"nh-number">1. </span><strong>Schema=
+ registry (default compatibility (backward))</strong></h1>
+<p>Confluent Avro schema registry is being used by producer &amp; consumer =
+of the messages. A valid compatibility setting has be identified&nbsp; &amp=
+; used. Various possible use cases are considered, experimented &amp; docum=
+ented here.&nbsp; All schema used are default compatibility ( backward)</p>
+<h1 id=3D"Schemacompatibility&amp;evolution-InputandJobUsed"><span class=3D=
+"nh-number">2. </span><strong>Input and Job Used</strong></h1>
+<p>Used input table rate_card and unit_length<br>Flink Job: ProcessRatecard=
+Conformance(lndcdcadsrtcrd_ratecard, lndcdcadsinvntry_unitlength)</p>
+<h1 id=3D"Schemacompatibility&amp;evolution-UseCases"><span class=3D"nh-num=
+ber">3. </span><strong>Use Cases</strong></h1>
+<h2 id=3D"Schemacompatibility&amp;evolution-Usecase-1-Anewfield/columnisadd=
+edatthesourceadvisorsystem;butthatcolumnisnotusedbytheconsumer."><span clas=
+s=3D"nh-number">3.1. </span><strong>Use case -1 -&nbsp;A new field/column i=
+s added at the source advisor system; but that column is not used by the co=
+nsumer.</strong></h2>
+<h3 id=3D"Schemacompatibility&amp;evolution-Scenario-1:theconsumerprocessth=
+enewdata"><span class=3D"nh-number">3.1.1. </span>Scenario-1: the consumer =
+process the new data&nbsp;&nbsp;</h3>
+<p>Ran producer to produce the data <br>Ran ProcessRatecardConformance and =
+consumed data produced and process worked as before with no new column in f=
+inal result of conformance_target_consr_rtcd but new column was there in in=
+put data for topic<br>lndcdcadsrtcrd_ratecard)</p>
+<h3 id=3D"Schemacompatibility&amp;evolution-Scenario-2:theconsumerre-proces=
+stheentiredata"><span class=3D"nh-number">3.1.2. </span>Scenario-2: the con=
+sumer re-process the entire data&nbsp;</h3>
+<p>Ran ProcessRatecardConformance and consumed data produced from couple of=
+ days ago till date and process worked as before with no new column in fina=
+l result of conformance_target_consr_rtcd</p>
+<h2 id=3D"Schemacompatibility&amp;evolution-Usecase-2-Anewfield/columnisadd=
+edatthesourceadvisorsystem;thatcolumnisbeingusedbytheconsumer"><span class=
+=3D"nh-number">3.2. </span><strong>Use case -2 -&nbsp;A new field/column is=
+ added at the source advisor system; that column is being used by the consu=
+mer</strong></h2>
+<h3 id=3D"Schemacompatibility&amp;evolution-Scenario-1:Theconsumerprocessth=
+atdatathatisproducedafterthechange"><span class=3D"nh-number">3.2.1. </span=
+>Scenario-1:&nbsp; The consumer process that data that is produced after th=
+e change</h3>
+<p><br></p>
+<p>Added new column</p>
+<p>{<br>"name" : "RATE_CARD_LONG_NM",<br>"type" : [ "null", "String" ],<br>=
+"default": null<br>}</p>
+<p>Updated CREATE TABLE lndcdcadsrtcrd_ratecard to include new column<br>Up=
+dated CREATE TABLE CREATE TABLE conformance_target_consr_rtcd to include ne=
+w column<br>Ran producer to produce the data<br>Ran ProcessRatecardConforma=
+nce and consumed data produced and process worked with new column in final =
+result of conformance_target_consr_rtcd and new column was there in data fo=
+r topic<br>lndcdcadsrtcrd_ratecard).<br>New column showed expected data</p>
+<h3 id=3D"Schemacompatibility&amp;evolution-Scenario-2:Theconsumerre-proces=
+stheentiredata"><span class=3D"nh-number">3.2.2. </span>Scenario-2: The con=
+sumer re-process the entire data</h3>
+<p>Ran ProcessRatecardConformance with option to start from beginning and c=
+onsumed data produced and process worked new column in final result of conf=
+ormance_target_consr_rtcd and new column was there in data for topiclndcdca=
+dsrtcrd_ratecard).<br>New column showed expected data for data produced aft=
+er adding new column in the schema with new data in new column<br>New colum=
+n showed null value for for data produced after adding new column in the sc=
+hema with no data in new column and default of null</p>
+<h2 id=3D"Schemacompatibility&amp;evolution-Usecase-3-Afieldatthesourceadvi=
+sorsystemisdeleted;butthatfieldisnotusedbytheconsumer."><span class=3D"nh-n=
+umber">3.3. </span><strong>Use case-3 - A field at the source advisor syste=
+m is deleted; but that field is not used by the consumer.</strong></h2>
+<p><strong>Only works&nbsp;&nbsp;with Optional fields with default value</s=
+trong></p>
+<h3 id=3D"Schemacompatibility&amp;evolution-Scenario-1:Theconsumerprocessth=
+atdatathatisproducedafterthechange.1"><span class=3D"nh-number">3.3.1. </sp=
+an>Scenario-1:&nbsp; The consumer process that data that is produced after =
+the change</h3>
+<p>Changes rate_card topic DIVISION_ID column schema to make it optional wi=
+th default value. Produced some records with no value for DIVISION_ID</p>
+<p>{<br>"name" : "DIVISION_ID",<br>"type" : [ "null", "long" ],<br>"default=
+": null<br>}</p>
+<p><br></p>
+<p><br>Updated&nbsp;ProcessRatecardConformance to not use&nbsp;DIVISION_ID<=
+br>Ran ProcessRatecardConformance and consumed data produced and process wo=
+rked as before with expected data in conformance_target_consr_rtcd</p>
+<h3 id=3D"Schemacompatibility&amp;evolution-Scenario-2:Theconsumerre-proces=
+stheentiredata.1"><span class=3D"nh-number">3.3.2. </span>Scenario-2: The c=
+onsumer re-process the entire data</h3>
+<p>Changes rate_card topic DIVISION_ID column schema to make it optional wi=
+th default value. Produced some records with no value for DIVISION_ID</p>
+<p>{<br>"name" : "DIVISION_ID",<br>"type" : [ "null", "long" ],<br>"default=
+": null<br>}</p>
+<p><br>Updated&nbsp;ProcessRatecardConformance to not use&nbsp;DIVISION_ID<=
+br>Ran ProcessRatecardConformance and consumed data produced from few days =
+ago&nbsp; and process worked as before with expected data in conformance_ta=
+rget_consr_rtcd</p>
+<h2 id=3D"Schemacompatibility&amp;evolution-Usecase-4-Afieldatthesourceadvi=
+sorsystemisdeleted;thatfieldisusedbytheconsumer"><span class=3D"nh-number">=
+3.4. </span><strong>Use case-4 - A field at the source advisor system is de=
+leted; that field is used by the consumer</strong></h2>
+<p><strong>Only works&nbsp;&nbsp;with Optional fields with default value</s=
+trong></p>
+<h3 id=3D"Schemacompatibility&amp;evolution-Scenario-1:Theconsumerprocessth=
+atdatathatisproducedafterthechange.2"><span class=3D"nh-number">3.4.1. </sp=
+an>Scenario-1:&nbsp; The consumer process that data that is produced after =
+the change</h3>
+<p>Changes rate_card topic DIVISION_ID column schema to make it optional wi=
+th default value. Produced some records with no value for DIVISION_ID. Upda=
+ted&nbsp;ProcessRatecardConformance to use COALESCE<br>Ran ProcessRatecardC=
+onformance and consumed data produced and process worked&nbsp; as expected =
+data using the default value of DIVISION_ID in conformance_target_consr_rtc=
+d</p>
+<h3 id=3D"Schemacompatibility&amp;evolution-Scenario-2:Theconsumerre-proces=
+stheentiredata.2"><span class=3D"nh-number">3.4.2. </span>Scenario-2: The c=
+onsumer re-process the entire data</h3>
+<p>Changes rate_card topic DIVISION_ID column schema to make it optional wi=
+th default value. Produced some records with no value for DIVISION_ID. Upda=
+ted&nbsp;ProcessRatecardConformance to use COALESCE<br>Ran ProcessRatecardC=
+onformance and consumed data produced starting from few days ago&nbsp; and =
+process worked&nbsp; as expected data using either the default value or the=
+ actual value iDIVISION_ID&nbsp; n the message&nbsp; in conformance_target_=
+consr_rtcd</p>
+<h2 id=3D"Schemacompatibility&amp;evolution-Usecase-5-Afieldatthesourceadvi=
+sorsystemisdeleted;butthatfieldisnotusedbytheconsumer(Nonoptionalfields)"><=
+span class=3D"nh-number">3.5. </span><strong>Use case-5 - A field at the so=
+urce advisor system is deleted; but that field is not used by the consumer =
+( Non optional fields)</strong></h2>
+<p>From backward compatibility point of view its not supported</p>
+<p>Other option :&nbsp; 1. Consume all the existing data.&nbsp; 2. Update c=
+onsumer schema. 3.Update producer schema and then produce the data&nbsp; 4.=
+&nbsp;Consume the data using Job.&nbsp; Re-processing will not be supported=
+</p>
+<h2 id=3D"Schemacompatibility&amp;evolution-Usecase-6-Afieldatthesourceadvi=
+sorsystemisdeleted;butthatfieldisusedbytheconsumer(Nonoptionalfields)"><spa=
+n class=3D"nh-number">3.6. </span><strong>Use case-6 - A field at the sourc=
+e advisor system is deleted; but that field is used by the consumer ( Non o=
+ptional fields)</strong></h2>
+<p>From backward compatibility point of view its not supported</p>
+<p>Other option :&nbsp; 1. Consume all the existing data.&nbsp; 2. Update c=
+onsumer schema. 3.Update producer schema and then produce the data&nbsp; 4.=
+ Update Flink Job code to remove the deleted fields. 5.&nbsp;Consume the da=
+ta using Job.&nbsp; Re-processing will not be supported</p>
+<h2 id=3D"Schemacompatibility&amp;evolution-Usecase-7-Afieldatsourceadvisor=
+systemisupdated;butthecolumnisnotusedbytheconsumer."><span class=3D"nh-numb=
+er">3.7. </span><strong>Use case-7 - A field at source advisor system is up=
+dated; but the column is not used by the consumer.</strong></h2>
+<p>From backward compatibility point of view its not supported</p>
+<p>Other option: Similar to delete non optional fields</p>
+<p><span class=3D"confluence-embedded-file-wrapper confluence-embedded-manu=
+al-size"><img class=3D"confluence-embedded-image" width=3D"468" src=3D"293f=
+622c15eb26aea736c3196c1278f2" data-image-src=3D"/download/attachments/64802=
+7803/image2021-7-2_13-17-2.png?version=3D1&amp;modificationDate=3D162524982=
+2772&amp;api=3Dv2" data-unresolved-comment-count=3D"0" data-linked-resource=
+-id=3D"649062367" data-linked-resource-version=3D"1" data-linked-resource-t=
+ype=3D"attachment" data-linked-resource-default-alias=3D"image2021-7-2_13-1=
+7-2.png" data-base-url=3D"https://confluence.disney.com" data-linked-resour=
+ce-content-type=3D"image/png" data-linked-resource-container-id=3D"64802780=
+3" data-linked-resource-container-version=3D"21" height=3D"67"></span></p>
+<h2 id=3D"Schemacompatibility&amp;evolution-Usecase-8-Afieldatsourceadvisor=
+systemisupdated;thatcolumnisusedbytheconsumer."><span class=3D"nh-number">3=
+.8. </span><strong>Use case-8 - A field at source advisor system is updated=
+; that column is used by the consumer.</strong></h2>
+<p>From backward compatibility point of view its not supported</p>
+<p>Other option:&nbsp;Similar to delete non optional fields</p>
+<p><span class=3D"confluence-embedded-file-wrapper confluence-embedded-manu=
+al-size"><img class=3D"confluence-embedded-image" width=3D"468" src=3D"293f=
+622c15eb26aea736c3196c1278f2" data-image-src=3D"/download/attachments/64802=
+7803/image2021-7-2_13-17-2.png?version=3D1&amp;modificationDate=3D162524982=
+2772&amp;api=3Dv2" data-unresolved-comment-count=3D"0" data-linked-resource=
+-id=3D"649062367" data-linked-resource-version=3D"1" data-linked-resource-t=
+ype=3D"attachment" data-linked-resource-default-alias=3D"image2021-7-2_13-1=
+7-2.png" data-base-url=3D"https://confluence.disney.com" data-linked-resour=
+ce-content-type=3D"image/png" data-linked-resource-container-id=3D"64802780=
+3" data-linked-resource-container-version=3D"21" height=3D"67"></span></p>
+<p><br></p>
+<h1 id=3D"Schemacompatibility&amp;evolution-Schemaregistry(Fulltransitive)W=
+IP"><span class=3D"nh-number">4. </span><strong>Schema registry (Full trans=
+itive) WIP</strong></h1>
+<p>Confluent Avro schema registry is being used by producer &amp; consumer =
+of the messages. A valid compatibility setting has be identified&nbsp; &amp=
+; used. Various possible use cases are considered, experimented &amp; docum=
+ented here.&nbsp; All schema used are FULL_TRANSITIVE)</p>
+<p>The scope of this test is to create multiple versions of schemas by addi=
+ng a new column ( optional) in each schema</p>
+<p><br></p>
+<pre style=3D"margin-left: 0.0px;"><code># Update compatibility requirement=
+s globally
+$ curl -X PUT -H "Content-Type: application/vnd.schemaregistry.v1+json" \
+    --data '{"compatibility": "<span style=3D"color: rgb(231,76,60);">FULL_=
+TRANSITIVE</span>"}' \
+    http://localhost:8081/config</code></pre>
+<h1 id=3D"Schemacompatibility&amp;evolution-InputandJobUsed.1"><span class=
+=3D"nh-number">5. </span><strong>Input and Job Used</strong></h1>
+<p>Used input table rate_card and unit_length<br>Flink Job: ProcessRatecard=
+Conformance(lndcdcadsrtcrd_ratecard, lndcdcadsinvntry_unitlength)</p>
+<h2 id=3D"Schemacompatibility&amp;evolution-Usecase-1-Anewfield/columnisadd=
+edatthesourceadvisorsystem;butthatcolumnisnotusedbytheconsumer.UsingV1,V2,V=
+3schemas"><span class=3D"nh-number">5.1. </span><strong>Use case -1 -&nbsp;=
+A new field/column is added at the source advisor system; but that column i=
+s not used by the consumer. Using V1, V2, V3 schemas</strong></h2>
+<p>V2&nbsp;=E2=86=92 Add a new optional column&nbsp;RATE_CARD_NM_DESC in&nb=
+sp;lndcdcadsrtcrd_ratecard</p>
+<p>V3 =E2=86=92 Add a new optional column&nbsp;RATE_CARD_NOTES&nbsp; &nbsp;=
+ in&nbsp;lndcdcadsrtcrd_ratecard</p>
+<h3 id=3D"Schemacompatibility&amp;evolution-Scenario-1:theconsumerprocessth=
+enewdata.1"><span class=3D"nh-number">5.1.1. </span>Scenario-1: the consume=
+r process the new data&nbsp;&nbsp;</h3>
+<p>Ran ProcessRatecardConformance and then consumed V1,&nbsp; V2, V3 and wh=
+en version were updated.&nbsp; Job run as before with no new columns</p>
+<h3 id=3D"Schemacompatibility&amp;evolution-Scenario-2:theconsumerre-proces=
+stheentiredata.1"><span class=3D"nh-number">5.1.2. </span>Scenario-2: the c=
+onsumer re-process the entire data&nbsp;</h3>
+<p>Ran ProcessRatecardConformance and then consumed V1,&nbsp; V2, V3 data&n=
+bsp; &nbsp;Job run as before with no new columns</p>
+<h2 id=3D"Schemacompatibility&amp;evolution-Usecase-2-Anewfield/columnisadd=
+edatthesourceadvisorsystem;thatcolumnisbeingusedbytheconsumer."><span class=
+=3D"nh-number">5.2. </span><strong>Use case -2 -&nbsp;A new field/column is=
+ added at the source advisor system; that column is being used by the consu=
+mer.&nbsp;</strong></h2>
+<h2 id=3D"Schemacompatibility&amp;evolution-UsingV1,V2,V3schemas"><span cla=
+ss=3D"nh-number">5.3. </span><strong>Using V1, V2, V3 schemas</strong></h2>
+<p>V2&nbsp;=E2=86=92 Add a new optional column&nbsp;RATE_CARD_NM_DESC in&nb=
+sp;lndcdcadsrtcrd_ratecard</p>
+<p>V3 =E2=86=92 Add a new optional column&nbsp;RATE_CARD_NOTES&nbsp; &nbsp;=
+ in&nbsp;lndcdcadsrtcrd_ratecard</p>
+<h3 id=3D"Schemacompatibility&amp;evolution-Scenario-1:Theconsumerprocessth=
+atdatathatisproducedafterthechange.3"><span class=3D"nh-number">5.3.1. </sp=
+an>Scenario-1:&nbsp; The consumer process that data that is produced after =
+the change</h3>
+<p>Ran ProcessRatecardConformance and then consumed V1,&nbsp; V2, V3 and th=
+ern updated the job to include new fields as and when versions were updated=
+.&nbsp; Job run as before with new columns in the outputs as per the versio=
+ns added</p>
+<h3 id=3D"Schemacompatibility&amp;evolution-Scenario-2:Theconsumerre-proces=
+stheentiredata.3"><span class=3D"nh-number">5.3.2. </span>Scenario-2: The c=
+onsumer re-process the entire data</h3>
+<p>Ran ProcessRatecardConformance and then consumed V1,&nbsp; V2, V3. Job r=
+un as before with new columns in the outputs with values&nbsp; as published=
+ in the messageor default values as per the versions added</p>
+<p><br></p>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_156685_668114868.1644822563512
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/293f622c15eb26aea736c3196c1278f2
+
+iVBORw0KGgoAAAANSUhEUgAAAvQAAABtCAYAAADOKvW0AAAgAElEQVR4Ae2dB5AtRfWHiQKl5Kgl
+QbRKBC1LQSQUhVIiEhUeIJKRjARBgiTJoE+CSFJBQEHAB5IUBCUjkiRniQqSlCCIiKDzr2/qf9Z+
+vZ3m3rn75u7+ump35s50nz79dTrT3dMzXSUnAiIgAiIgAiIgAiIgAiIwtASmG1rNpbgIiIAIiIAI
+iIAIiIAIiEAlg16FQAREQAREQAREQAREQASGmIAM+iHOPKkuAiIgAiIgAiIgAiIgAjLoVQZEQARE
+QAREQAREQAREYIgJyKAf4syT6iIgAiIgAiIgAiIgAiIgg15lQAREQAREQAREQAREQASGmIAM+iHO
+PKkuAiIgAiIgAiIgAiIgAjLoVQZEQAREQAREQAREQAREYIgJyKAf4syT6iIgAiIgAiIgAiIgAiIg
+g15lQAREQAREQAREQAREQASGmIAM+iHOPKkuAiIgAiIgAiIgAiIgAjLoVQZEQAREQAREQAREQARE
+YIgJyKAf4syT6iIgAiIgAiIgAiIgAiLQCYP+jTfeqP7yl79UDz74YPXII49UL7zwQvXWW28pd0RA
+BERABERABERABERABDIExtSgf+qpp6opU6ZU++yzT7XqqqtWCy20UDXzzDNX0003XfBvttlmqxZf
+fPFq0qRJ1ZFHHlldccUV1SuvvJJJkm6LgAiIgAiIgAiIgAiIwMQhMHCDHiN+8uTJ1dJLLx002mPG
+fOw6DwBrrrlmddZZZ1WvvfbaxMkppVQEREAEREAEREAEREAEAgQGZtBfd9111SqrrFJNP/30rRjy
+IQN/1llnrbbddtvqySefDCRNl0RABERABERABERABERg/BNo3aDHkP/MZz4zMCM+ZNgzai/DfvwX
+VqVQBERABERABERABERgNIHWDPp//etf1fbbbz+mhrxv3LPm/owzzhidSl0RAREQAREQAREQAREQ
+gXFKoBWD/oknnuh5jfycc85ZfeQjH6mX52y88cbV+uuvX6244or1y7AsqfGN9pLf22yzTfXmm2+O
+0yxTskRABERABERABERABETgfwT6Nuh/+ctfVnPPPXex4b3wwgtXu+yyS3XNNddUbFeZc3/961+r
+c889t9pwww2r2WefvTieT3ziE9Xjjz+eE6/7IiACIiACIiACIiACIjDUBHo26N95551q3333LXrp
+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
+d0436hpfy73++uvHrEgw84VeDzzwQL33/w033DASt19eR240ODn66KPrrw43CBL02pacoHDn4ljF
+40TZ+HQYdGycqB4DjAWLNuqBm7xUnXP9TfTzQect7x3ykUH3Y2IwZ7cxPgTJV245spWy79hBiC+2
+8wV2vs7tDoT4fvVbBHIERhn0BGA0PmRY33vvvTl5wfsvv/xytdxyywVlhuJJXWO5jPtF02CEiYt8
+ITUkf6+99kqE6tYtv2Pg9x577NEtJf9fm5zx2SWl6SA32mijmiWNsd9Ad0XXHFMeyvnAFGW9LceD
+MB1T7INBZlzQQfExL/yb88urXW9ybKtTbktOTvc24skxz+mQu9+Gjrk4uD/odJTokPMzFizaqAdu
+OlJ1zvU30c8Hmbf33HNPPZBBm/z888+PoL7//vvrAQj6E77mzRe411lnnYolzeb4gujqq69ef8mc
+L8ZyzpfZ+dCSnAj0QiBo0LOXd8joPeSQQxrHgQGw9NJLB+WF4ii95n/KvFSx5ZdfPqjLueeeWypi
+mvvzOwaWOdC4d9HljM8u6Uxji76819FlV8KUvffbLBOMHhHvc889F0TD58O5z1IwDHq34/LLa1BA
+5mJbnXJbcjLqVm3Ek2Oe0yF3vw0dc3Fwf9DpKNEh52csWLRRD9x0+HWO2TG50QQGlbf0u+Qp7R5/
+rkF/wAEHVBtssEH99XM0YtnPpEmTauOe38yicn/rrbeuXnzxxVrpG2+8sZajDwOOzkNdKSMQNOi/
+973vBY1eCm0Tx6duP/WpTwVllRruKX+77bZbE3VqYyT0QixxMLI4CGfTbvvvv3918sknj1oHzOgV
+LwUfeOCB1cUXXzzKYOIeBibTcnwL4PHHH68bEeSZYzrvwgsvtJ/1MRevLxf/vsMgZD939D788MOr
+q6++etToAYYb04377bdfdfzxx1ePPfbYVGIoM8R11VVX1R95OvbYY6u777674l0KcyldafgIz/IR
+lhUdeuihtRx0wV177bX1dCVTluzQxOi063J8zS/yaITRF86kxR2NhvvZZ59dwR19/NmqEp7ElWLK
+PeIlTa7jYfO8884buYSOxx13XM2Dh+wjjzxyVJhTTjml4psS5lKMzU8oL8kn0rbrrrvWbIjr0ksv
+tSAjR3TfbrvtqjfffLNitss1/F1DBlksx4E3sqw8sM+162666abqqKOOqg466KC6XjDbwAiX60L6
+uvc5b0NOSRnKxZPKd/R0yw+bAhx22GFJ5nJ7zdYAABShSURBVKm0u7L22Wefus0oZeHzc3/H5Mb4
+hMoOS9rM9VomLTzHWNzmJ6ZzLr8sPEceSPjqtOso39TV22+/feRyThe3HpTWdYTHOPl1jvffMDJJ
+88033zyiV+gkJhO/LjPrc0LXTG5bbWOqTJfGhb+SvE2l/6yzzqrbHIszdqTfW2utteqHd9pkM+jJ
+F36feOKJUwXFrmIUnvu8T4Gfn/70pyN+uL7eeutVO+yww8g1nYhAEwJBg/62226LGuGhdWChCOnY
+l1122agcM9RXXXXV2mC85ppr6l1vHnnkkdpgYHr/gx/8YDY8HVap42uaFq97nH/++QfyUSkeEti1
+h+UPTLtR+fnNR4BwGGpU6p133rlezrDuuuvW67ffeOONkSRxnz92AKKiw8ftGPDo/47F6+adLzf0
+QEMjjr8999yz1n/NNdesNt5444olVDheHKWBIl0HH3xwnU70vO+++6bSHz+kDQaMSiDTOsKcrhj0
++F9ttdXqr8BaPFzDcEQ2RvZmm21W+6PzNVfC1/zy0LTvvvvWMpDLqI6l8+GHH66NSWauMEC33Xbb
+Wh/WTppDH/4sn0I88RtjysODjbhRTl2HMe0+vFpcsMTw22qrrUalHd625CbHmLhiecmUMizYhYp4
+eaDyHx5dXUPnbvlEBoa5Xx6YfjYHV/xtscUW9cMbI/4WzvzE9HXLXj9y7IGtpAyVxJPKd9JE+vij
+/PBgRF2JMc+l3ZXFFD5tRomOxjZ2DMlN8cGg98uO1c9+ymSTvAnp3JSFzTBguJqzazaAkeJgYdx6
+UFrXSziZfI7MkNFWwj3mcjJdZtbnhK4hv622MVemS+MqydtU+ulv1l9//boOxvhxHRnU1SlTplTn
+n39+XXfNoGfEHV5W1k0OgzJcZ5MIyjDnV1xxhd2ujwyc0T6ih5wINCUQNOgRsthiiwWN31RD4UbO
+06lrNPvnK664YnXddde5QUad88TKy30LL7xwVBYv8FK5ShwPD74e/N5xxx1Lgjf2gwG4ySabjLzo
+8swzz9SVePLkyRUjksSLgWrO1uPRKJmj0mPQuLvauB0D/vzfsXgZxTYXkmv3OMIeA959YKLxIRyj
+q9xnChHj46WXXqqDYgDTGDFabw7/PATYtCKzNjSEJ510Uu0lp6sZ9Bgm9qADC+TyZwYcPDFsMX5x
+pXxNT47MHCCTkX5zxI/+m2666ciaekbBiIcHNTP6Cefnk8mwY4opD7SlnTxxwc24s7yGqVtGdzjH
+uQZ9jnEqL3nIwZkB44681zcK/rnlE91D5YFZIBwDATyobLnlliP1hjKDDBuhT+lrZa9fOaS7pAyV
+xhOrS+Q7LlR+QsxL0u7LKtGxViLzz5dbwgeRoXT0WyZL4/Z17oWFGcnMkprjPS4bSS3Vxa0HpXU9
+x8n0cY+0C5STmMvJ9JkhJ3StrbaxpEzn4iLNpXmbSz/vTllfE2KIvjxs77TTTjVn36BnwA5e7gwp
+cpid4jq7dbFOnnNmIc0hl7X0XE/ln/nXUQR8AlGDHkMuZPy+973vTRZ2IqCxWmSRRYLhkdn0pVY6
+9NRoP4ZczjEFGUoP13IPFjnZofs8rVMxGdFlm0H7wzB19aXiMnJ+11131dPHhHGn6vjN6J7r3I6B
+6+7vVLz4MxeSa/fsiH+MRJbL0ADRqLKkBZ1JDzKYdnQd087uGvRQPLz/QINYoitxIsNlQnx0ptts
+s40bdXXCCSfUfil/5nJ8zR/HkEFvD2F+/Gak2NR2KJ2ubDuPMWU0s7STD8XFgy9brz766KN1VGbQ
+lzBO5eWVV15Zy7P0tmHQ++WZ8sAsFQ79SZ8Z+PXFqqpHHM2gT+lrZa9fOZZu4k+VoZJ4kJHKd+6H
+8jTEvCTtvqxSHY117OjLNX8pPvjx09FWmUR2Lm5f5xIW6Ev544+BB9Y/84Bn7Y0NKODPdTldKAO2
+VLKkrpdwcuMvOS+R6TNDbuhaW21jSZnOxcUgTEnelqQ/x5FReWZBbCCx1KBnqSIcbftdlngyw0w5
+ox9h9pP7vEArJwK9EIga9KydjhnATAul3GmnnRYN6y4dSMnw76XW488888zBLaFcGSuttFJQJx5Q
+GGFp22HYUjlDf1RiHKPLjBbgh2UrtmzENR655xtAbseAHPd3Kl5GCc2F5No9OzLSgKGFXxowOiOb
+7uajX1y/9dZbzXvwGIqHUQhmJ0p0jRn0lCMzAi1ilqoQn62jL+FrYTmGDHrWYyLTX9fOVDPXee8B
+F0qnK9vOU0xLOvlYXLxjgEEPU5wZ9CWMS/LSN8osPSVHt3yGOFEeGO3Cmb72joTJZ2bQDPoSfduS
+kytDJfGQhlS+cz/EJcS8JO2+rFIdjXXs6MvFX44Pfvx0mD7I8/+sjSpJZ0ncvs4Wd6p88f4JbR1/
+zPiwNv23v/1trStrr3mXB7nurGmJLm49KKnrpqvPiN/GKZZXseslMn1myApda6ttLMnrXFwXXXRR
+UdtRkv4YO67zjQ36agZQ6Jv4w8CHD4Md2BL44bf7vghhrR7wUIFjkIyBU2as8U87yEOjzTLXnvRP
+BBoQiBr0yFhmmWWCRvAcc8xRj1qE4mGkMbb2fe211w4FKb7GOuP55psvqFNq2QxPxrGHE15GHYQz
+45CKzwiE+8eIPFN6GPP80UkwuhMyXkMNqdsxoLv7OxUvOpgLybV7/pERBRojZhZofNhNweLJ7X8f
+iscMepMRYmS6hpigX86gL+XrptX0cZfc2DKoCy64wPVaLzsibbbfeiidUwXwfvhMeSHMOnkMCteF
+1tD7D3ks3cCgtwcuM+gtTSnG5ieVl9YZDWKE3jXo2e4Nlox6uc416Ev0bUNOSRkqicdNRyjfuR8q
+PyHmJWn3ZTXV0dXXPffllvAhvJ8OS0M/ZbI0bl/nXlmwPziGHMtuMMLcpYilurjtdEldL+Hk5k/J
+eYlMnxlyQ9faahtNp1T7k4uLAY2SvLW4UmUvxZHNCGAR+2OTAsoK99mswnWnn356fZ2lQa7DsGfJ
+EEs5GZ3n5Vk5EeiFQNKgp4LFDOHYSDtPwLEwLCvp17HmLCSffe5DjgeMJZdcMhiGBxNbAx0K2881
+XnxhVNtfXsSoDrMNNj3oLllhJIiGgKUj5vjtG29ux4A/93cqXhoOcyG5do8jL4DxMqy7HMkaVbbV
+Yhqa9LnvAGB8M23Ii5rmQvGYQV+ia68GfSlf05OjNfauQU9Dy4yK/50C3kcgbeQZLpROVzbnKaa8
+VIfjRVA3Lhp5rrn1jbjYfcKdWeK9DD6OBlOcGfQljFN5SX7izChjd4amzi2fIU6uQQ9vHhpt7T5x
+UQb4bSP0KX2t7PUrh3SXlKGSeEryPcQlxLwk7b6sEh1L8tSXW8IHuX462iiTpXH7OvfDgjqGwUW7
+Z0u7SF+pLm49IFyurpdwKsk310+JTJ8Z4UPXYNlG21hSpnNx0S6V5G1J+l1e/vlDDz1U3XjjjVP9
+sfkAfLCXeKjAMVDnzyCzzJQyEHLYKTxkIMfdvCLkV9dEIEYgadATKDZKzzIXG510hXMtZHBbZ+z6
+7eWcF1bmmWeeUXHMOeecQXEYnCF9uMYatkE61sZRQZm2pRHgZVdenOSh5PXXX68NFH6zbIM/GgH8
+s1WfOX43MegJF4uXnYPMheTaPY4Ykrz0yguMNFQsrWH0gXD2YMa2bXRuLMEifejJfTpwc6F4zKDH
+T07XXg36Ur6mJ8eQQc91lpCRDpb04IcHGtLN+xHmQum0e3ZMMUUu7tRTT60NWkYCeZiyrTR9g574
+MDCYiraRH/cFKzPokZljjJ9YXtrMBLvQECedDp1aE+caMiFOrkGPXLjiDxY8XNlvtw2J6euWPQvX
+ixzSXVqGcvGU5HuIi8ucJV7mcmkPycrpaLJTR19uKR83HVZ2+i2TpXH7OpO+Xlmw+xvyGKl3PzpX
+qotbD9CjpK6XcHLzjPaSfsR9gde9z3lOZohZ6Bqy2mobc2W6NK6SvM2ln1F4f3TdZ+j+9tfQc88e
+YomLtt3i9HcIoy9lO2Rb2tokXlcHnYsABLIG/WWXXRY1iNnu0X+aZPpxoYUWmirMTDPNVNEYtuXO
+PPPMqeRjnIfWFNIpx/adn2uuuQY2Om/ppCNnBJ6tKmkQOZoxjx86OqZuMQ7Rn0rPrjjuS7Pcc0fs
+CceOJqzvNOf/jsXrflY6JNfk2ZHlAbvvvvvIGj9mGygP5pg6RGeWUpE+Rq9YT0inYi4Uj2vA5XRF
+FjJsVxyTiy7+x8XYKxo9bA19CV+Tx9EMenvR1e6xHIqGll1tkM9DGOnmurlQOu2ee8wxZaSJER+M
+BuKifLBNpjvTQ1w8RLEUBz/8ZptDdwbGNehzjNEvlpc2C4AMZgWIj2MT55bPECfKA6NX5mhD2KPe
+1payvp6lcdQfczF93bLXjxxLd0kZKoknl+8hLi5zd8Yil/aQrJSOpNVdEuifEx8uJLeEj5sOKztt
+lMmSuEM6p1hY+Qodqe+0ce6Ds/kr0cWtB4QrqeslnEwHjjxcUEdThmFOZohZ6BrxtdU25sp0aVwl
+eZtKvz0QNfnyOnYGzN13KuDCww6DENzjyG+3zyBNtOPM1NDeUYbkRKAfAlmDHuEYFLFRbtbtuoYi
+/nkphC+yYkwvvvjiU43Y9qOsG5ap9XnnnbdipgCD0l8KgHH27ne/O6q3O5Lnyh3EOR0mU31+Zba4
+WIJjRqhda+OYi7c0DhpA11j0w5Eupk1dY8r3k/vdlq6heNrii479ptP0yzGlY/brlYV1j+RLyB8P
+H7YPvfkvYZzLS6a1zcAzuYM6kq5UuSPenL74aUNOSRkqiSeX7yGWMCec70rS7ocJ6cg1jI7YH0vt
+cq6ET6jstFEmS+IO6R9iEfLX5FovupTU9RJO6Gkv77L0NedKZebkcB9ZbbSNJWW6JK6SvI2lHx1Y
+AtOGQxZbNsfk9dNntqGfZIwvAkUGPR04jX3MqOdDDFQO302rwsqT8qKLLhrVt8nTt58m/RaBLhOg
+A7EdeFLT7l1Og3QbWwK008wgxP5CDxNjq6FiKyVwzDHH1Lul8NKtnAiIwMQiUGTQg4QXu1imEjPq
+GSV31xVOK4y8lMKsQExPPmiF0SMnAuORgG3dSX1k9yQ5ERCBiUOglxmgiUNHKRWB8U2g2KAHA/uq
+xtakY0AvtdRSlX0Ke1pgQ7/ZZ589aswvsMACo5bmTAs9FacIDIoA+52zrzNTznIiIAIiIAIiIAIT
+g0Ajgx4kvKQXG/3mOjvQ+B/tGAuURxxxRDXDDDNEdePetNBrLNKuOERABERABERABERABCYugcYG
+PS93rLzyylHDGaMe45mvnvo74AwCM1v7Lbvsskl90Cn3ddtB6CaZIiACIiACIiACIiACIjBoAo0N
+ehRitwK2sUqN1HNvlllmqXgBlR1e2nZ8EXONNdbI6sASIba8m1Yv6LadbskTAREQAREQAREQAREQ
+AZdATwY9AtjVho82pZa5mMHPR5/Ya5q1vaHdcFyFUufsMct2k1/+8peL4mX5z+WXX54SqXsiIAIi
+IAIiIAIiIAIiMNQEejboLdVXXnllNd9882VHys24X3DBBavtttuuNrRffvllExM8Yvw/88wzIx9n
+mm222YrjYRkOH0iREwEREAEREAEREAEREIHxTKBvgx447F+83HLLFRvbZtxznHXWWettJtlOcr31
+1qs/ErXMMstU73vf+6oZZ5yxJ5l8dXIQH2oazwVBaRMBERABERABERABERhOAq0Y9CSdD1nwKXrX
+WB/rc74Me8455wxnTkhrERABERABERABERABEeiBQGsGvcV98803F70w26axz8u3O++8c708x/TQ
+UQREQAREQAREQAREQAQmAoHWDXqDhmHPLjQlL832atwzIi9D3ojrKAIiIAIiIAIiIAIiMBEJDMyg
+N5jPPvtsdfzxx1crrLBC8iuzpUY9a+4nTZpUTZkypWLXGzkREAEREAEREAEREAERmMgEBm7Qu3Ax
+7i+55JLqoIMOqtZaa61qscUWq97znveMrLvnRVgz7BnZn3vuuasll1yy2mSTTapjjjmmuvbaa6vX
+X3/dFalzERABERABERABERABEZjQBMbUoI+Rfvvtt+uPT7GNJdtUvvrqq/oQVAyWrouACIiACIiA
+CIiACIiAQ6ATBr2jj05FQAREQAREQAREQAREQAQaEJBB3wCWvIqACIiACIiACIiACIhA1wjIoO9a
+jkgfERABERABERABERABEWhAQAZ9A1jyKgIiIAIiIAIiIAIiIAJdIyCDvms5In1EQAREQAREQARE
+QAREoAEBGfQNYMmrCIiACIiACIiACIiACHSNgAz6ruWI9BEBERABERABERABERCBBgRk0DeAJa8i
+IAIiIAIiIAIiIAIi0DUCMui7liPSRwREQAREQAREQAREQAQaEJBB3wCWvIqACIiACIiACIiACIhA
+1wjIoO9ajkgfERABERABERABERABEWhAQAZ9A1jyKgIiIAIiIAIiIAIiIAJdIyCDvms5In1EQARE
+QAREQAREQAREoAEBGfQNYMmrCIiACIiACIiACIiACHSNgAz6ruWI9BEBERABERABERABERCBBgRk
+0DeAJa8iIAIiIAIiIAIiIAIi0DUCMui7liPSRwREQAREQAREQAREQAQaEJBB3wCWvIqACIiACIiA
+CIiACIhA1wjIoO9ajkgfERABERABERABERABEWhAQAZ9A1jyKgIiIAIiIAIiIAIiIAJdIyCDvms5
+In1EQAREQAREQAREQAREoAEBGfQNYMmrCIiACIiACIiACIiACHSNgAz6ruWI9BEBERABERABERAB
+ERCBBgRk0DeAJa8iIAIiIAIiIAIiIAIi0DUCMui7liPSRwREQAREQAREQAREQAQaEJBB3wCWvIqA
+CIiACIiACIiACIhA1wjIoO9ajkgfERABERABERABERABEWhAQAZ9A1jyKgIiIAIiIAIiIAIiIAJd
+IyCDvms5In1EQAREQAREQAREQAREoAEBGfQNYMmrCIiACIiACIiACIiACHSNgAz6ruWI9BEBERAB
+ERABERABERCBBgT+DxP1mXMdrZR+AAAAAElFTkSuQmCC
+------=_Part_156685_668114868.1644822563512--
