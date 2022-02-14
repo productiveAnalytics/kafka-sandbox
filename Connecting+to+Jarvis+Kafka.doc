@@ -1,0 +1,349 @@
+Date: Sun, 13 Feb 2022 23:00:08 -0800 (PST)
+Message-ID: <425694899.156684.1644822008690@prod-2.prod.entcnf-prod.svc.cluster.local>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_156683_200736105.1644822008690"
+
+------=_Part_156683_200736105.1644822008690
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Connecting to Jarvis Kafka</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Connecting to Jarvis Kafka</h1>
+    <div class=3D"Section1">
+        <p><u><strong>URLS</strong></u></p>
+<p><em>Sandbox</em></p>
+<p>Kafka Bootstrap URL: <strong>us-east-1-adsales-sb-main.data-integration.=
+dtcisb.technology:9092</strong></p>
+<p>Schema Registry URL: <a href=3D"https://us-east-1-adsales-sb-main.data-i=
+ntegration.dtcisb.technology:8080" class=3D"external-link" rel=3D"nofollow"=
+>https://us-east-1-adsales-sb-main.data-integration.dtcisb.technology:8080<=
+/a></p>
+<p><em>DEV</em></p>
+<p>Kafka Bootstrap URL:&nbsp;<strong><span style=3D"color: rgb(18,19,24);te=
+xt-decoration: none;">us-east-1-adsales-dev-main.data-integration.dtcisb.te=
+chnology:9092</span></strong></p>
+<p>Schema Registry URL:&nbsp;<a style=3D"text-decoration: underline;" title=
+=3D"Original URL:
+https://us-east-1-adsales-dev-main.data-integration.dtcisb.technology:8080/
+
+Click to follow link." href=3D"https://nam04.safelinks.protection.outlook.c=
+om/?url=3Dhttps%3A%2F%2Fus-east-1-adsales-dev-main.data-integration.dtcisb.=
+technology%3A8080%2F&amp;data=3D04%7C01%7CDakshinamurthi.Rajavel%40disney.c=
+om%7C11e8a65e4db6485dfdbe08d98cfa1d9b%7C56b731a8a2ac4c32bf6b616810e913c6%7C=
+1%7C0%7C637695828123841491%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQ=
+IjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=3DK9vpICb5oipP2=
+Yt9xk%2B%2B0KreeqvoGvfyhqo1iLjPUQg%3D&amp;reserved=3D0" class=3D"external-l=
+ink" rel=3D"nofollow">https://us-east-1-adsales-dev-main.data-integration.d=
+tcisb.technology:8080</a></p>
+<p><br></p>
+<p>Credential: jarvis-user/&lt;Ask in Slack Chanel&gt;</p>
+<p><br></p>
+<p><u><strong>Hosts file changes</strong></u></p>
+<p>Sandbox <code>/etc/hosts</code></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: Emacs" data-theme=3D"Emacs">10.1.9.74 us-east=
+-1-adsales-sb-main.data-integration.dtcisb.technology
+10.1.90.94 us-east-1-adsales-sb-main.data-integration.dtcisb.technology
+10.1.188.39 us-east-1-adsales-sb-main.data-integration.dtcisb.technology</p=
+re>=20
+</div>
+</div>
+<p>Local <code>/etc/hosts</code></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: Emacs" data-theme=3D"Emacs">Sandbox
+10.27.213.98 us-east-1-adsales-sb-main.data-integration.dtcisb.technology
+10.27.212.198 us-east-1-adsales-sb-main.data-integration.dtcisb.technology
+10.27.212.32 us-east-1-adsales-sb-main.data-integration.dtcisb.technology
+DEV
+10.176.56.132 us-east-1-adsales-dev-main.data-integration.dtcisb.technology
+10.176.57.208 us-east-1-adsales-dev-main.data-integration.dtcisb.technology
+10.176.58.163 us-east-1-adsales-dev-main.data-integration.dtcisb.technology
+</pre>=20
+</div>
+</div>
+<p><br></p>
+<p><u><strong>Java Code Settings for producer/consumer</strong></u></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Eclipse" data-theme=3D"Eclipse">config.put(Co=
+mmonClientConfigs.SECURITY_PROTOCOL_CONFIG, "SASL_SSL");
+config.put(SaslConfigs.SASL_MECHANISM, "SCRAM-SHA-512");
+config.put(SaslConfigs.SASL_JAAS_CONFIG, "org.apache.kafka.common.security.=
+scram.ScramLoginModule required username=3D\"" + username + "\" password=3D=
+\"" + password + "\";");</pre>=20
+</div>
+</div>
+<p><br></p>
+<p><u><strong>Flink SQL Settings</strong></u></p>
+<p>properties.security.protocol=3D 'SASL_SSL'<br>properties.sasl.mechanism=
+=3D 'SCRAM-SHA-512'<br>properties.sasl.jaas.config=3D 'org.apache.kafka.com=
+mon.security.scram.ScramLoginModule required username=3D\"jarvis-user\" pas=
+sword=3D\"&lt;USE PROVIDED PASSWORD&gt;\";'</p>
+<p><br></p>
+<p><u><strong>Schema Registry Settings</strong></u></p>
+<p style=3D"margin-left: 30.0px;"><strong>To confirm connection to authenti=
+cated JARVIS SR:</strong></p>
+<p><br></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
+;">
+<b>curl JARVIS SR</b>
+</div>
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: Emacs" data-theme=3D"Emacs">curl -s -X GET ht=
+tps://us-east-1-adsales-sb-main.data-integration.dtcisb.technology:8080/sub=
+jects/lndcdcadscommon_division-value/versions/latest -K- &lt;&lt;&lt; "--us=
+er jarvis-user:${JARVIS_PWD}" </pre>=20
+</div>
+</div>
+<p style=3D"margin-left: 30.0px;"><strong>Properties:</strong></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Eclipse" data-theme=3D"Eclipse">props.put("ba=
+sic.auth.credentials.source", "USER_INFO");
+props.put("schema.registry.basic.auth.user.info", "jarvis-&lt;USE PROVIDED =
+PASSWORD&gt;");</pre>=20
+</div>
+</div>
+<p><br></p>
+<p><span style=3D"color: rgb(29,28,29);"><u><strong>Schema Registry Setting=
+s Flink SQL</strong></u></span></p>
+<p><span style=3D"color: rgb(29,28,29);">'value.avro-confluent.basic-auth.c=
+redentials-source'=3D 'USER_INFO',&nbsp;</span></p>
+<p><span style=3D"color: rgb(29,28,29);">"'value.avro-confluent.basic-auth.=
+user-info'=3D 'jarvis-user:pwd',&nbsp;</span></p>
+<p><span style=3D"color: rgb(29,28,29);">flink-avro-confluent-registry<span=
+>&nbsp;:&nbsp;1.13.2 version</span></span></p>
+    </div>
+</body>
+</html>
+------=_Part_156683_200736105.1644822008690--
