@@ -1,0 +1,391 @@
+Date: Sun, 13 Feb 2022 22:54:35 -0800 (PST)
+Message-ID: <1283456505.156669.1644821675395@prod-2.prod.entcnf-prod.svc.cluster.local>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_156668_1115650443.1644821675395"
+
+------=_Part_156668_1115650443.1644821675395
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Kafka commands</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Kafka commands</h1>
+    <div class=3D"Section1">
+        <pre>On the Cluster navigate to the /home/ubuntu/kafka directory th=
+en use the kafka sh files in the bin directory to execute the commands belo=
+w. You might need to be root in order to run some commands.<br><br>Most of =
+commands need "bootstap-server" property that can take comma separted list =
+of broker:port <br>e.g. kafka3:9092,kafka2:9092,kafka1:9092</pre>
+<h3 id=3D"Kafkacommands-Topics">Topics</h3>
+<h4 id=3D"Kafkacommands-Create:">Create:</h4>
+<p><code>./bin/kafka-topics.sh --bootstrap-server localhost:9092 --topic &l=
+t;name-of-topic&gt; --partitions 10 --replication-factor 3 --create</code><=
+/p>
+<p><code>./bin/kafka-topics.sh --bootstrap-server kafka3:9095,kafka2:9094,k=
+afka1:9092 --create --if-not-exists --topic lndcdcadsprpsl_flightrange100pa=
+rtitions --partitions 100 --replication-factor 3 --config min.insync.replic=
+as=3D2 --config cleanup.policy=3Dcompact</code></p>
+<h4 id=3D"Kafkacommands-Describe:">Describe:</h4>
+<p><code>./bin/kafka-topics.sh --bootstrap-server localhost:9092 --topic &l=
+t;name-of-topic&gt; --describe</code></p>
+<h4 id=3D"Kafkacommands-Checkoffsets:">Check offsets:</h4>
+<p><code>./bin/kafka-run-class.sh kafka.tools.GetOffsetShell --broker-list =
+localhost:9092 --topic &lt;name-of-topic&gt;</code></p>
+<p style=3D"margin-left: 30.0px;">Latest: <code>./bin/kafka-run-class.sh ka=
+fka.tools.GetOffsetShell --broker-list localhost:9092 --topic &lt;name-of-t=
+opic&gt; --time -1</code></p>
+<p style=3D"margin-left: 30.0px;">Earliest:&nbsp;<code>./bin/kafka-run-clas=
+s.sh kafka.tools.GetOffsetShell --broker-list localhost:9092 --topic &lt;na=
+me-of-topic&gt; --time -2</code></p>
+<h4 id=3D"Kafkacommands-List:">List:</h4>
+<p><code>./bin/kafka-topics.sh --bootstrap-server localhost:9092 --list</co=
+de></p>
+<h4 id=3D"Kafkacommands-Delete:">Delete:</h4>
+<p><code>./bin/kafka-topics.sh --bootstrap-server localhost:9092 --topic &l=
+t;name-of-topic&gt; --delete</code></p>
+<p><code>./bin/kafka-topics.sh --bootstrap-server localhost:9092 --topic &l=
+t;name-of-topic&gt; --delete --force</code></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeHeader panelHeader pdl" style=3D"border-bottom-width: 1px=
+;">
+<b>Script to delete matching topics</b>
+</div>
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: Emacs" data-theme=3D"Emacs">for my_topic in $=
+(./bin/kafka-topics.sh --bootstrap-server localhost:9092 --list | grep '^ln=
+dcdcads' | sort);
+do
+   ./bin/kafka-topics.sh --bootstrap-server localhost:9092 --topic $my_topi=
+c --delete --force;
+   echo "Deleted topic: " $my_topic;
+done;</pre>=20
+</div>
+</div>
+<p><br></p>
+<h3 id=3D"Kafkacommands-ConsumerGroups">Consumer Groups</h3>
+<h4 id=3D"Kafkacommands-List:.1">List:</h4>
+<p>To check the latest offsets and lags by partition for the given consumer=
+ group. Note: for generic kafka-consumer, the "client.id" acts as consumer =
+group. For kafka-streams or ksqlDB application, the consumer group is dynam=
+ically created from "application.id"</p>
+<p><code>./bin/kafka-consumer-groups.sh --bootstrap-server localhost:9092 -=
+-group &lt;consumer-group-id&gt; --describe</code></p>
+<p><code>To get all consumers connected :&nbsp;</code></p>
+<p class=3D"p1"><code>./bin/kafka-consumer-groups.sh --bootstrap-server loc=
+alhost:9092 --all-groups --list</code></p>
+<h4 id=3D"Kafkacommands-Moveoffsets:">Move offsets:&nbsp;<img class=3D"emot=
+icon emoticon-warning" src=3D"3537ed112493bc9aa7179a3a954ff58d" data-emotic=
+on-name=3D"warning" alt=3D"(warning)"></h4>
+<p>Note: <em>Exercise caution</em> while moving offsets manually may cause =
+other consequences in behaviour of the existing attached consumer group(s).=
+ Dry run to confirm intended result, before executing the command.</p>
+<p>An easier option could be to delete the topic and recreate it using the =
+same properties as earlier.<img class=3D"emoticon emoticon-light-on" src=3D=
+"29698896305268d80a2acf17c005dc0f" data-emoticon-name=3D"light-on" alt=3D"(=
+lightbulb)"></p>
+<p style=3D"margin-left: 30.0px;">dry run: <code>./bin/kafka-consumer-group=
+s.sh --bootstrap-server localhost:9092 --topic &lt;topic-name&gt; --group &=
+lt;consumer-group-id&gt; --reset-offsets&nbsp; --to-earliest --dry-run</cod=
+e></p>
+<p style=3D"margin-left: 30.0px;">execute: <code>./bin/kafka-consumer-group=
+s.sh --bootstrap-server localhost:9092 --topic &lt;topic-name&gt; --group &=
+lt;consumer-group-id&gt; --reset-offsets&nbsp; --to-earliest --execute</cod=
+e></p>
+<h4 id=3D"Kafkacommands-EmptytopicorDeleteallmessages:">Empty topic or Dele=
+te all messages:&nbsp;<img class=3D"emoticon emoticon-warning" src=3D"3537e=
+d112493bc9aa7179a3a954ff58d" data-emoticon-name=3D"warning" alt=3D"(warning=
+)"></h4>
+<ol>
+<li>Note the properties of the existing topic using --describe option.</li>
+<li>run: <code>./bin/</code><code>kafka-configs.sh&nbsp;<span style=3D"font=
+-family: SFMono-Medium , &quot;SF Mono&quot; , &quot;Segoe UI Mono&quot; , =
+&quot;Roboto Mono&quot; , &quot;Ubuntu Mono&quot; , Menlo , Courier , monos=
+pace;letter-spacing: 0.0px;">--bootstrap-server localhost:9092 --entity-typ=
+e topics --entity-name </span></code>&lt;topic-name&gt; --alter --add-confi=
+g retention.ms=3D100</li>
+<li><p class=3D"highlight plaintext">Wait for a minute or so and ensure the=
+ messages are deleted from topic</p></li>
+<li>Then, issue above command now with original retention.ms configuration =
+to restore</li>
+</ol>
+<h4 id=3D"Kafkacommands-Deleteconsumer-group:">Delete consumer-group:</h4>
+<ol>
+<li class=3D"p1">Check if the consumer-group is empty:&nbsp;<code>./bin/kaf=
+ka-consumer-groups.sh --bootstrap-server localhost:9092 --group&nbsp;&lt;co=
+nsumer-group-id&gt; --describe --state</code></li>
+<li class=3D"p1"><code>./bin/kafka-consumer-groups.sh --bootstrap-server lo=
+calhost:9092 --group&nbsp;&lt;consumer-group-id&gt; --delete&nbsp;</code></=
+li>
+</ol>
+<h3 id=3D"Kafkacommands-Utilityconsumersforinvestigation">Utility consumers=
+ for investigation</h3>
+<h4 id=3D"Kafkacommands-KSQLDB:">KSQLDB:</h4>
+<p>On ksqldb prompt, use <code>print &lt;topic-name&gt;;</code>&nbsp;or <co=
+de>print &lt;topic-name&gt; from beginning;</code></p>
+<p><br></p>
+<h4 id=3D"Kafkacommands-Consoleconsumer:">Console consumer:</h4>
+<p><code>./bin/kafka-console-consumer.sh&nbsp;--bootstrap-server localhost:=
+9092 --topic &lt;topic-name&gt; --from-beginning</code></p>
+<p><br></p>
+<h4 id=3D"Kafkacommands-KafkaCat:">KafkaCat:</h4>
+<p><code>brew install kafkacat</code></p>
+<p class=3D"p1"><code><span class=3D"s1">kcat -C -b localhost:9092 -t lndcd=
+cadsinvntry_exclsvtytyp -r <a href=3D"http://localhost:8081" class=3D"exter=
+nal-link" rel=3D"nofollow">http://localhost:8081</a> -s key=3Ds -s value=3D=
+avro -o beginning -c 3 -e</span></code></p>
+    </div>
+</body>
+</html>
+------=_Part_156668_1115650443.1644821675395
+Content-Type: image/svg+xml
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/29698896305268d80a2acf17c005dc0f
+
+<svg width=3D"16" height=3D"16" xmlns=3D"http://www.w3.org/2000/svg" xmlns:=
+xlink=3D"http://www.w3.org/1999/xlink"><defs><path id=3D"a" d=3D"M0 16h16V0=
+H0z"/></defs><g transform=3D"matrix(1 0 0 -1 0 16)" fill=3D"none" fill-rule=
+=3D"evenodd"><mask id=3D"b" fill=3D"#fff"><use xlink:href=3D"#a"/></mask><g=
+ mask=3D"url(#b)"><path d=3D"M12.889 11.084c0-2.861-2.222-3.306-2.222-5.973=
+ 0-1.377-1.388-1.493-2.445-1.493-.912 0-2.927.346-2.927 1.494 0 2.666-2.184=
+ 3.11-2.184 5.972 0 2.68 2.349 4.854 4.926 4.854 2.578 0 4.852-2.173 4.852-=
+4.854" fill=3D"#FFD983" fill-rule=3D"nonzero"/><path d=3D"M9.852 1.556C9.85=
+2 1.188 8.859.444 8 .444c-.86 0-1.852.744-1.852 1.112 0 .368.993.222 1.852.=
+222.86 0 1.852.146 1.852-.222" fill=3D"#CCD6DD" fill-rule=3D"nonzero"/><pat=
+h d=3D"M10.092 11.425a.444.444 0 0 1-.628 0L8 9.962l-1.464 1.463a.444.444 0=
+ 1 1-.628-.628l1.648-1.648V4.444a.444.444 0 1 1 .888 0V9.15l1.648 1.648a.44=
+4.444 0 0 1 0 .628" fill=3D"#FFCC4D" fill-rule=3D"nonzero"/><path d=3D"M10.=
+667 2.222a.889.889 0 0 0-.89-.889H6.223a.889.889 0 0 0-.889.89v2.666h5.334V=
+2.222z" fill=3D"#99AAB5" fill-rule=3D"nonzero"/><path d=3D"M5.333 1.778a.44=
+4.444 0 0 0-.073.882l5.334.89a.444.444 0 1 0 .146-.876l-5.333-.89a.42.42 0 =
+0 0-.074-.006M5.333 3.556a.444.444 0 0 0-.073.882l5.334.89a.444.444 0 1 0 .=
+146-.876l-5.333-.89a.42.42 0 0 0-.074-.006" fill=3D"#CCD6DD" fill-rule=3D"n=
+onzero"/></g></g></svg>
+------=_Part_156668_1115650443.1644821675395
+Content-Type: image/svg+xml
+Content-Transfer-Encoding: 7bit
+Content-Location: file:///C:/3537ed112493bc9aa7179a3a954ff58d
+
+<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M9.756 1.723l5.627 10.32A2 2 0 0 1 13.627 15H2.373a2 2 0 0 1-1.756-2.957l5.627-10.32a2 2 0 0 1 3.512 0z" fill="#FFC400"/><path d="M9 8.8c0 .662-.448 1.2-1 1.2s-1-.538-1-1.2V5.2C7 4.538 7.448 4 8 4s1 .538 1 1.2v3.6zM8 13a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" fill="#253858"/></g></svg>
+------=_Part_156668_1115650443.1644821675395--
